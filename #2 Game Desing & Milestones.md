@@ -3,7 +3,7 @@ Game Design
 This game is an epic crossover between Subway Surfers and Beatsaber. The main concept is for the player to navigate an obstacle courses to the rhythm of popular rock songs.
 
 Controls:
-  Movement: the player is can move alongisde 3 lanes, hold the stick to go to the sides, release to stay in the middle
+  Movement: the player is can move alongside 3 lanes, hold the stick to go to the sides, release to stay in the middle
   Actions: buttons for dodge, block and attack
 
 Scoring:
