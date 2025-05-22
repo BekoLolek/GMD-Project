@@ -43,8 +43,8 @@ MonoBehaviour:
     y: 0
     width: 376
     height: 933
-  m_MinSize: {x: 276, y: 76}
-  m_MaxSize: {x: 4001, y: 4026}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -69,8 +69,8 @@ MonoBehaviour:
     y: 0
     width: 403
     height: 380
-  m_MinSize: {x: 202, y: 226}
-  m_MaxSize: {x: 4002, y: 4026}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -121,8 +121,8 @@ MonoBehaviour:
     y: 0
     width: 952
     height: 553
-  m_MinSize: {x: 52, y: 76}
-  m_MaxSize: {x: 4002, y: 4026}
+  m_MinSize: {x: 50, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -178,7 +178,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 135
+  controlID: 29
   draggingID: 0
 --- !u!114 &8
 MonoBehaviour:
@@ -351,8 +351,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Inspector\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1545
-    y: 24
+    x: 1544
+    y: 79
     width: 375
     height: 907
   m_SerializedDataModeController:
@@ -400,8 +400,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Game\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 593
-    y: 24
+    x: 592
+    y: 79
     width: 950
     height: 527
   m_SerializedDataModeController:
@@ -539,7 +539,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 24
+    y: 632
     width: 1140
     height: 354
   m_SerializedDataModeController:
@@ -564,7 +564,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Textures
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -574,16 +574,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Textures
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\L\GMD Project\GMD Project
+  m_LastProjectPath: C:\Users\L\GMD-Project\GMD Project
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: 6ab50000
-    m_LastClickedID: 46442
-    m_ExpandedIDs: 
+    scrollPos: {x: 0, y: 290}
+    m_SelectedIDs: 3e1f0100
+    m_LastClickedID: 73534
+    m_ExpandedIDs: 00000000561e01008a1f0100862c010008330100be3601008a3801004e3b010000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -640,8 +640,8 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: c623000092ad0000
+    m_HadKeyboardFocusLastEvent: 1
+    m_ExpandedInstanceIDs: c623000092ad000082f00000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -691,8 +691,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Hierarchy\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1142
-    y: 24
+    x: 1141
+    y: 632
     width: 401
     height: 354
   m_SerializedDataModeController:
@@ -709,9 +709,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: 90ccfdff
       m_LastClickedID: 0
-      m_ExpandedIDs: 20fbffff
+      m_ExpandedIDs: 64e3fdff2449feff8e50feff9250feffb050feffaa5bfefff89dfeffeca0feff5ce0feff62e0feff6ce0feff14e6feff2a58010072700100c2780100
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -758,7 +758,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 24
+    y: 79
     width: 591
     height: 527
   m_SerializedDataModeController:
@@ -1231,9 +1231,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 311.06522, y: 338.65454, z: -64.557465}
+    m_Target: {x: 0, y: 8003.59, z: 16}
     speed: 2
-    m_Value: {x: 311.06522, y: 338.65454, z: -64.557465}
+    m_Value: {x: 0, y: 8003.59, z: 16}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1281,11 +1281,11 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: -0.31408402, y: 0.041846175, z: -0.013861699, w: -0.94837976}
     speed: 2
-    m_Value: {x: -0.314084, y: 0.041846175, z: -0.013861698, w: -0.94837976}
+    m_Value: {x: -0.3140815, y: 0.041845836, z: -0.013861586, w: -0.94837207}
   m_Size:
-    m_Target: 344.88284
+    m_Target: 9.699541
     speed: 2
-    m_Value: 344.88284
+    m_Value: 9.699541
   m_Ortho:
     m_Target: 0
     speed: 2
