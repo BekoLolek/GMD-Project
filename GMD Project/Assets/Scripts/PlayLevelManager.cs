@@ -4,6 +4,7 @@ public class PlayLevelManager : MonoBehaviour
 {
     public GameObject audioManagerParent;
 
+    public GameObject hellGate;
     private GameObject audioManagerInstance;
 
     private void Start()
@@ -15,6 +16,7 @@ public class PlayLevelManager : MonoBehaviour
             if (audioManagerPrefab != null)
             {
                 audioManagerInstance = Instantiate(audioManagerPrefab, audioManagerParent.transform);
+                hellGate.GetComponent<HellGate_Controller>().ToggleHellGate();
             }
             else
             {
