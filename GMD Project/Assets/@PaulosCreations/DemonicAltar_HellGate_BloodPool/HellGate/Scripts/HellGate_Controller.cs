@@ -24,7 +24,7 @@ public class HellGate_Controller : MonoBehaviour
     {
         gateEffectObj = gateEffectRenderer.gameObject;
         gateEffectMaterial = gateEffectRenderer.material;
-
+        Debug.Log(gateRenderer);
         gateMaterial = gateRenderer.material;
 
         gateEffectObj.SetActive(false);
@@ -54,6 +54,7 @@ public class HellGate_Controller : MonoBehaviour
 
     private IEnumerator PreActivateGate()
     {
+        Start();
         inTransition = true;
 
         float transitionTimer = 0;
@@ -75,7 +76,7 @@ public class HellGate_Controller : MonoBehaviour
                 orbParticlesR.Play();
                 orbRAudio.Play();
             }
-
+            Debug.Log(gateMaterial);
             gateMaterial.SetColor("_EmissionColor", emissionColor.Evaluate(transitionTimer));
 
             yield return null;
