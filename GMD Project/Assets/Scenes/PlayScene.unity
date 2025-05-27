@@ -546,6 +546,7 @@ GameObject:
   - component: {fileID: 763440940}
   - component: {fileID: 763440939}
   - component: {fileID: 763440943}
+  - component: {fileID: 763440944}
   m_Layer: 0
   m_Name: Floor
   m_TagString: Untagged
@@ -654,7 +655,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58641e2f928290f4689da495d213e1a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 0}
+--- !u!114 &763440944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 763440938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7295b2a22d2a2d468ada9448a0d0808, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &961739749
 GameObject:
   m_ObjectHideFlags: 0
@@ -1095,6 +1107,81 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bdc8589ae991184e8e7b533b6a1ab92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1053573051
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1053573054}
+  - component: {fileID: 1053573053}
+  - component: {fileID: 1053573052}
+  m_Layer: 5
+  m_Name: Loading Screen
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1053573052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1053573051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1053573053
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1053573051}
+  m_CullTransparentMesh: 1
+--- !u!224 &1053573054
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1053573051}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2077696803}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1131529927
 GameObject:
   m_ObjectHideFlags: 0
@@ -1156,6 +1243,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1168289638}
   - component: {fileID: 1168289637}
+  - component: {fileID: 1168289639}
   m_Layer: 0
   m_Name: LevelManager
   m_TagString: Untagged
@@ -1192,6 +1280,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1168289639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1168289636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cee11cee7ca5234f8abef0d40878b0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  loadingScreen: {fileID: 1053573051}
+  scoreManager: {fileID: 1874138757}
 --- !u!1 &1273038046
 GameObject:
   m_ObjectHideFlags: 0
@@ -1820,6 +1923,7 @@ MonoBehaviour:
   multiplierText: {fileID: 1033549076}
   scoreChangeTextPrefab: {fileID: 8716752126228380027, guid: 674e20c4b25718b4689f763912733c31, type: 3}
   scoreTextAnchor: {fileID: 1908545964}
+  started: 0
 --- !u!1 &1908545963
 GameObject:
   m_ObjectHideFlags: 0
@@ -2092,6 +2196,7 @@ RectTransform:
   m_Children:
   - {fileID: 1968232451}
   - {fileID: 1542076258}
+  - {fileID: 1053573054}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}

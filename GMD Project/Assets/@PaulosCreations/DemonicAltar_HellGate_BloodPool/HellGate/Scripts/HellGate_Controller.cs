@@ -76,7 +76,6 @@ public class HellGate_Controller : MonoBehaviour
                 orbParticlesR.Play();
                 orbRAudio.Play();
             }
-            Debug.Log(gateMaterial);
             gateMaterial.SetColor("_EmissionColor", emissionColor.Evaluate(transitionTimer));
 
             yield return null;
