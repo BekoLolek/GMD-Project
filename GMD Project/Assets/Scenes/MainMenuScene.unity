@@ -1620,6 +1620,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levels:
   - {fileID: 11400000, guid: 6cb2d3d144babf54187ac239652b0b4f, type: 2}
+  - {fileID: 11400000, guid: 1b827a06df91ede48aaa1fca78baccc0, type: 2}
   levelImage: {fileID: 908239226}
   levelNameText: {fileID: 1024193704}
   levelBPMText: {fileID: 1805397125}
@@ -4221,6 +4222,7 @@ MonoBehaviour:
   entryPrefabOdd: {fileID: 3687159868593570546, guid: 917aaffb773cec3419df158bee3cc123, type: 3}
   allLevels:
   - {fileID: 11400000, guid: 6cb2d3d144babf54187ac239652b0b4f, type: 2}
+  - {fileID: 11400000, guid: 1b827a06df91ede48aaa1fca78baccc0, type: 2}
 --- !u!4 &1398901470
 Transform:
   m_ObjectHideFlags: 0

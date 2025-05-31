@@ -12,9 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 267b35ace7dcad14bbff62b7a9e8fc54, type: 3}
   m_Name: LeadearboardDataSO
   m_EditorClassIdentifier: 
-  levelName: Square Hammer
+  levelName: Test
   entries:
-  - name: Jake
-    score: 88196
+  - name: Nerijus
+    score: 47
+  - name: Rojus
+    score: 46
   - name: Lolek
-    score: 4000
+    score: 46
+  - name: Jake
+    score: 2

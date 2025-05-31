@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7f0a3150611e44478d19435bbf5b643, type: 3}
   m_Name: LevelDataSO
   m_EditorClassIdentifier: 
-  levelName: Square Hammer
+  levelName: Test
   levelPreview: {fileID: 21300000, guid: b88114ab39d86544da9d470228e645fb, type: 3}
-  audioManagerPrefab: {fileID: 5597023445093890130, guid: 5f5233cb9d59bf1409a580166e6ba035, type: 3}
+  audioManagerPrefab: {fileID: 5597023445093890130, guid: 54cd35fd3006a114b9877cf25742ba95, type: 3}
   bpm: 130
-  beatmap: {fileID: 11400000, guid: 502f98897bb187f4c99fcbb9aea8d794, type: 2}
-  leaderboardData: {fileID: 11400000, guid: eb1855e25f1698845bda051a1337be96, type: 2}
+  beatmap: {fileID: 11400000, guid: 34637d8cf39b0964ba651818e559b1e2, type: 2}
+  leaderboardData: {fileID: 11400000, guid: aadb568bcc330c64f9c5f9dcd129d898, type: 2}
