@@ -25,6 +25,10 @@ public class ScoreManager : MonoBehaviour
     public GameObject scoreChangeTextPrefab;
     public Transform scoreTextAnchor;
 
+    public bool started = false;
+
+    public static bool isStarted { get; set; }
+
     void Awake()
     {
         if (Instance == null) Instance = this;
@@ -38,15 +42,20 @@ public class ScoreManager : MonoBehaviour
 
     void Update()
     {
-        scoreAccumulator += scoreTimeMultiplier * Time.deltaTime;
-
-        if (scoreAccumulator >= 1f)
+        if (started)
         {
-            int increment = Mathf.FloorToInt(scoreAccumulator);
-            score += increment;
-            scoreAccumulator -= increment;
-            UpdateUI();
+            started = true;
+            scoreAccumulator += scoreTimeMultiplier * Time.deltaTime;
+
+            if (scoreAccumulator >= 1f)
+            {
+                int increment = Mathf.FloorToInt(scoreAccumulator);
+                score += increment;
+                scoreAccumulator -= increment;
+                UpdateUI();
+            }
         }
+
 
     }
 
@@ -87,5 +96,10 @@ public class ScoreManager : MonoBehaviour
     {
         GameObject go = Instantiate(scoreChangeTextPrefab, scoreTextAnchor);
         go.GetComponent<ScoreChangePopup>().Setup(amount);
+    }
+
+    public void startScoring()
+    {
+        started = true;
     }
 }

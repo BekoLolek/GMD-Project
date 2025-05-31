@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BeatManager : MonoBehaviour
 {
@@ -6,8 +7,9 @@ public class BeatManager : MonoBehaviour
     public float bpm = 130f;
     public int currentBeat;
 
-    public BeatmapSO beatmap;
     public static int CurrentBeatNumber { get; private set; }
+
+    public LevelDataSO levelData;
 
 
     public static event System.Action<int> OnBeat;
@@ -42,12 +44,31 @@ public class BeatManager : MonoBehaviour
 
     void Update()
     {
-        currentBeat = Mathf.FloorToInt(audioSource.time / beatInterval);
-        CurrentBeatNumber = currentBeat;
-        if (currentBeat != lastBeat)
+        if (audioSource == null)
+            return;
+
+        if (audioSource.isPlaying)
         {
-            lastBeat = currentBeat;
-            OnBeat?.Invoke(currentBeat);
+            currentBeat = Mathf.FloorToInt(audioSource.time / beatInterval);
+            CurrentBeatNumber = currentBeat;
+            if (currentBeat != lastBeat)
+            {
+                lastBeat = currentBeat;
+                OnBeat?.Invoke(currentBeat);
+            }
         }
+        else if (audioSource.time >= audioSource.clip.length)
+        {
+            ScoreSubmitter.SubmitScore(GetRandomString(), ScoreManager.Instance.score, levelData);
+            Debug.Log($"Level completed. Score submitted. {ScoreManager.Instance.score} for {levelData.levelName}");
+            SceneManager.LoadScene("MainMenuScene");
+        }
+    }
+
+    private string GetRandomString()
+    {
+        string[] options = { "Lolek", "Jake", "Kasper", "Rojus", "Nerijus" };
+        int index = Random.Range(0, options.Length);
+        return options[index];
     }
 }

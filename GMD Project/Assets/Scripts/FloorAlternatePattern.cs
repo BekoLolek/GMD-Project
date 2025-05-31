@@ -4,7 +4,7 @@ using System.Collections;
 public class FloorAlternatePattern : MonoBehaviour
 {
     
-    public AudioSource audioSource;
+    
 
     private Renderer rend;
     private bool toggle = false;

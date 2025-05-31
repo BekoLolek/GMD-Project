@@ -38,7 +38,7 @@ public class SpawnEnemy : MonoBehaviour
             Debug.Log("Loading level: " + selectedLevel.levelName);
             beatmap = selectedLevel.beatmap;
         }
-        audioSource.Play();
+        
     }
 
     void OnEnable()

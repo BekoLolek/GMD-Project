@@ -17,15 +17,12 @@ public class PlayLevelManager : MonoBehaviour
             {
                 audioManagerInstance = Instantiate(audioManagerPrefab, audioManagerParent.transform);
                 hellGate.GetComponent<HellGate_Controller>().ToggleHellGate();
+                //audioManagerInstance.GetComponent<AudioSource>().Play();
             }
             else
             {
                 Debug.LogError("AudioManager prefab is not assigned in LevelDataSO.");
             }
-        }
-        else
-        {
-            Debug.LogError("No LevelDataSO selected. Make sure you set SelectedLevel.currentLevel before loading the scene.");
         }
     }
 

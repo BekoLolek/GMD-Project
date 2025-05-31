@@ -7,11 +7,22 @@ public class MainMenuUI : MonoBehaviour
     public GameObject optionsPanel;
     public GameObject mainMenuPanel;
 
+    public GameObject leaderboardPanel;
+
     public void OnPlayPressed()
     {
         mainMenuPanel.SetActive(false);
         levelSelectPanel.SetActive(true);
         optionsPanel.SetActive(false);
+        leaderboardPanel.SetActive(false);
+    }
+
+    public void OnLeaderboardPressed()
+    {
+        mainMenuPanel.SetActive(false);
+        levelSelectPanel.SetActive(false);
+        optionsPanel.SetActive(false);
+        leaderboardPanel.SetActive(true);
     }
 
     public void OnOptionsPressed()
@@ -19,6 +30,7 @@ public class MainMenuUI : MonoBehaviour
         mainMenuPanel.SetActive(false);
         optionsPanel.SetActive(true);
         levelSelectPanel.SetActive(false);
+        leaderboardPanel.SetActive(false);
     }
 
     public void OnQuitPressed()
@@ -33,5 +45,6 @@ public class MainMenuUI : MonoBehaviour
         mainMenuPanel.SetActive(true);
         levelSelectPanel.SetActive(false);
         optionsPanel.SetActive(false);
+        leaderboardPanel.SetActive(false);
     }
 }
