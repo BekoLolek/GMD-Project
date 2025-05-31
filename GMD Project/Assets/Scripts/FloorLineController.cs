@@ -11,6 +11,7 @@ public class FloorLineController : MonoBehaviour
     private int _beatNumber;
 
     private bool started = false;
+    public float moveDelay = 0.2f;
 
 
     void Start()
@@ -39,9 +40,9 @@ public class FloorLineController : MonoBehaviour
         _beatNumber = beatNumber;
         if (!started)
         {
-            StartCoroutine(LineAnimation(beatNumber));
+            StartCoroutine(AnimateDelayed(beatNumber));
         }
-        
+
     }
 
     IEnumerator LineAnimation(int beatNumber)
@@ -77,6 +78,14 @@ public class FloorLineController : MonoBehaviour
 
         // Optional: Snap to 100 right before next beat (ensure it's correct)
         rend.material.SetFloat("_LineMorph", 0.4f);
+    }
+    
+    private IEnumerator AnimateDelayed(int beatNumber)
+    {
+        yield return new WaitForSeconds(moveDelay);
+
+        // Snap forward along Z axis
+        StartCoroutine(LineAnimation(beatNumber));
     }
 
 }

@@ -11,4 +11,6 @@ public class LevelDataSO : ScriptableObject
     public int bpm;
 
     public BeatmapSO beatmap;
+    public LeaderboardDataSO leaderboardData;
+
 }

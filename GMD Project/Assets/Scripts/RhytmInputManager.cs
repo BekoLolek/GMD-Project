@@ -1,13 +1,26 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
+using Game.Inputs;
 public class RhythmInputManager : MonoBehaviour
 {
-    public KeyCode[] laneKeys = new KeyCode[3] { KeyCode.LeftArrow, KeyCode.UpArrow, KeyCode.RightArrow };
+    public Controls controls;
+
+    
     public HitZone[] hitZones; // Drag your HitZone objects here
     public float hitWindow = 0.2f;
     public float bpm = 130f;
     private AudioSource audioSource;
 
     private float beatInterval;
+
+    void Awake()
+    {
+        controls = new Controls();
+
+        controls.Default.HitLeft.performed += ctx => OnLaneHit(0);
+        controls.Default.HitMiddle.performed += ctx => OnLaneHit(1);
+        controls.Default.HitRight.performed += ctx => OnLaneHit(2);
+    }
 
     void Start()
     {
@@ -23,20 +36,24 @@ public class RhythmInputManager : MonoBehaviour
             }
         }
     }
-
-    void Update()
+    private void OnEnable()
     {
-        for (int lane = 0; lane < laneKeys.Length; lane++)
-        {
-            if (Input.GetKeyDown(laneKeys[lane]))
-            {
-                float timeSinceLastBeat = audioSource.time % beatInterval;
+        controls.Default.Enable();
+    }
+
+    private void OnDisable()
+    {
+        controls.Default.Disable();
+    }
+    void OnLaneHit(int laneIndex)
+    {
+        float timeSinceLastBeat = audioSource.time % beatInterval;
                 float timeToNextBeat = beatInterval - timeSinceLastBeat;
                 float currentBeatTime = audioSource.time;
 
                 bool onBeat = Mathf.Min(timeSinceLastBeat, timeToNextBeat) <= hitWindow;
 
-                HitZone hitZone = hitZones[lane];
+                HitZone hitZone = hitZones[laneIndex];
                 GameObject enemy = hitZone.GetTopEnemy();
 
                 if (enemy != null)
@@ -49,7 +66,7 @@ public class RhythmInputManager : MonoBehaviour
 
                         if (onBeat && destroyed)
                         {
-                            Debug.Log($"Perfect beat kill on lane {lane}!");
+                            Debug.Log($"Perfect beat kill on lane {laneIndex}!");
                             ScoreManager.Instance.RegisterPerfectHit();
                             hitZone.DestroyEnemy();
                         }
@@ -73,13 +90,12 @@ public class RhythmInputManager : MonoBehaviour
                 }
                 else
                 {
-                    Debug.Log($"No enemy on lane {lane}.");
+                    Debug.Log($"No enemy on lane {laneIndex}.");
                     ScoreManager.Instance.RegisterMiss();
                 }
-            }
-
-        }
     }
+
+    
 
     bool IsOnBeat()
     {

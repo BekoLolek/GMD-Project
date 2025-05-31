@@ -145,7 +145,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bpm: 130
   currentBeat: 0
-  beatmap: {fileID: 0}
+  levelData: {fileID: 11400000, guid: 6cb2d3d144babf54187ac239652b0b4f, type: 2}
 --- !u!114 &8942145745698189978
 MonoBehaviour:
   m_ObjectHideFlags: 0
