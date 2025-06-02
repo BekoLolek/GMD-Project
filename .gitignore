@@ -3,8 +3,8 @@ GMD Project/Library/
 GMD Project/Temp/
 GMD Project/Obj/
 GMD Project/Logs/
-GMD Project/Build/
-GMD Project/Builds/
+# GMD Project/Build/
+# GMD Project/Builds/
 
 # Ignore project settings and user-specific files
 GMD Project/UserSettings/
