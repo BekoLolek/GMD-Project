@@ -486,9 +486,9 @@
                     "name": "",
                     "id": "8755c809-1545-467f-a446-c828e811078d",
                     "path": "<Gamepad>/buttonNorth",
-                    "interactions": "Tap",
+                    "interactions": "",
                     "processors": "",
-                    "groups": ";Gamepad;Keyboard&Mouse;Touch;Joystick;XR",
+                    "groups": ";Gamepad",
                     "action": "Hits",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -499,7 +499,7 @@
                     "path": "<Gamepad>/buttonWest",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": ";Gamepad",
                     "action": "Hits",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -510,7 +510,7 @@
                     "path": "<Gamepad>/rightTrigger",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": ";Gamepad",
                     "action": "Hits",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -521,7 +521,7 @@
                     "path": "<Keyboard>/leftArrow",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": ";Keyboard&Mouse",
                     "action": "Hits",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -532,7 +532,7 @@
                     "path": "<Keyboard>/rightArrow",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": ";Keyboard&Mouse",
                     "action": "Hits",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -543,7 +543,7 @@
                     "path": "<Keyboard>/upArrow",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": ";Keyboard&Mouse",
                     "action": "Hits",
                     "isComposite": false,
                     "isPartOfComposite": false
