@@ -14,12 +14,13 @@ Protect the realm from otherworldly creatures!
 
 Follow the development journey through these blog posts:
 
-- [#1 Roll-a-ball](./#1 Roll-a-ball.md)
-- [#2 Game Design & Milestones](./#2 Game Design & Milestones.md)
-- [#3 Milestone 1](./#3 Milestone 1.md)
-- [#4 Milestone 2](./#4 Milestone 2.md)
-- [#5 Milestone 3](./#5 Milestone 3.md)
-- [#6 Final Product](./#6 Final Product.md)
+- [#1 Roll-a-ball](./%231%20Roll-a-ball.md)
+- [#2 Game Design & Milestones](./%232%20Game%20Design%20%26%20Milestones.md)
+- [#3 Milestone 1](./%233%20Milestone%201.md)
+- [#4 Milestone 2](./%234%20Milestone%202.md)
+- [#5 Milestone 3](./%235%20Milestone%203.md)
+- [#6 Final Product](./%236%20Final%20Product.md)
+
 
 ---
 
