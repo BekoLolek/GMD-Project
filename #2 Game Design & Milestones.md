@@ -16,7 +16,7 @@ Scoring:
 I plan to create 3 maps:
   Nightmare by Avenged Sevenfold - 125 BPM - 6:03 minutes
   Pretender by Foo Fighters - 105 BOM - 4:29 minutes
-  Square Hammer by Ghost - 92 BPM - 4:03 minutes
+  Square Hammer by Ghost - 130 BPM - 4:03 minutes
 
 These songs have different Beats Per Minute and also lengths, this is a great way to categorize them in terms of difficulty.
 
@@ -55,5 +55,5 @@ Map breakdown:
 Development Milestones:
   Milestone 1: Sync player speed and obstacle / enemy positions with beats in the song 
   Milestone 2: Sort out animations for the player, enemies and map
-  Milestone 3: Add 2 more maps
+  Milestone 3: User Interface
   Milestone 4: Finished game with 3 maps
