@@ -6,7 +6,7 @@ Protect the realm from otherworldly creatures!
 
 ## 📺 Demo Video
 
-▶️ [Watch the Demo Video](https://www.youtube.com/your-demo-video-link)
+▶️ [Watch the Demo Video](https://www.youtube.com/watch?v=FxXbb-JVJj0)
 
 ---
 
