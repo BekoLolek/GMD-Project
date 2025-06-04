@@ -11,6 +11,7 @@ To add a little more spice and difficulty to the game, I introduced a double hit
 
 ### Execution
 Adding this enemy was quite easy, as I just had to add health to enemies and tweak hit detection logic to check for an additional input withing a set hit window of 0.2 seconds.
+
 ![HitDetectionTweakHealth](./Blog%20Post%20Images/Final/HitDetectionTweakHealth.png)
 ![EnemyHealth](./Blog%20Post%20Images/Final/EnemyHealth.png)
 

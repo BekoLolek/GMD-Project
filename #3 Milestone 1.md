@@ -32,6 +32,7 @@ First, I determine the beat interval by dividing 60 (seconds in a minute) by the
 The enemies are spawned at the further end of the platform and need 8 beats to reach the arrows, to be decimated by the player.
 ### Execution
 The spawning is controlled by the EnemySpawner object, that instantiates an enemy prefab on a lane, rotates it to face the camera. The spawning logic entirely depends on a BeatMapSO object, which is a Sriptable Object containing data for enemy type, lane and beat numbers to spawn on. The drawback of this approach is that I must manually enter all values if I want an enemy to spawn, but this way I have complete control over the actions that need to be taken by the player to be successful, hence making the game feel more natural and fun. I also had to make sure that the nex value in the beatmap is also checked on the current beat, as there might be cases where I want more enemies to spawn simultaneously, for example on lanes 0 and 2.
+
 ![Enemy Spawn](./Blog%20Post%20Images/Milestone%201/EnemySpawn.png)
 
 ## Enemy Movement
@@ -40,6 +41,7 @@ The spawning is controlled by the EnemySpawner object, that instantiates an enem
 Enemies move one tile per beat (2 units in Unity distance). They snap to their next location with very high speed, eliminating the need for move animation, while also giving the player a mechanic to get used to.
 ### Execution
 Movement is very simple. At first I made the movement happen exactly on the beat in a coroutine with very high speed, basically enemies just snapped to the next position, but something was off. How can the player hit the enemies on beat if they move on the beat? They cannot. So I added a slight delay of 0.2 seconds to their movement, so technically they do not move on beat, but the user feels like they do. This has solved this problem amazingly.
+
 ![EnemyMove](./Blog%20Post%20Images/Milestone%201/EnemyMove.png)
 
 
