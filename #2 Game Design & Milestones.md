@@ -1,4 +1,4 @@
-# Rhythm Invasion
+# GMD - Game Design Document - Rhythm Invasion
 
 ## Concept statement
   Protect the realm from otherworldly creatures with unnatural sense of rhythm.
