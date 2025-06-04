@@ -3,6 +3,7 @@ The game is officially ready for deployment!
 ## Features added
 * Double Hit Enemy
 * Full Song
+* Tutorial UI
 
 ## Double Hit Enemy
 
@@ -25,6 +26,15 @@ First I had to determine precisely where the beats are in the song using a sound
 
 ![BeatmapSO](./Blog%20Post%20Images/Final/BeatmapSO.png)
 ![Beatmap Loader](./Blog%20Post%20Images/Final/BeatmapLoader.png)
+
+## Tutorial UI
+
+### Idea
+To make sure that the players do not need to figure out everything a tutorial is needed.
+### Execution
+The tutorial detailes the main goal of the game (to hit enemies when they get to the hit zone) and gives a warning about double hit enemies.
+
+![Tutorial](./Blog%20Post%20Images/Final/Tutorial.png)
 
 
 
