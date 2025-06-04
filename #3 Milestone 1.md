@@ -23,6 +23,7 @@ The process started by creating a rectangle 6 units wide and 16 units long. Then
 At first I wrote beat detection logic for every single component that needed it, but realizing that violates the DRY principle, I decided to move all that logic into one single class called BeatManager and handle beats as events of type System.Action<int>, called OnBeat.
 ### Execution
 First, I determine the beat interval by dividing 60 (seconds in a minute) by the BPM of the song. This value is then used to divide the current time in the song, giving me the number of the beat that the song is at currently. After some error and exception handling, the event is triggered. 
+
 ![BeatManager](./Blog%20Post%20Images/Milestone%201/BeatManager.png)
 
 ## Enemy Spawning
@@ -38,7 +39,8 @@ The spawning is controlled by the EnemySpawner object, that instantiates an enem
 ### Idea
 Enemies move one tile per beat (2 units in Unity distance). They snap to their next location with very high speed, eliminating the need for move animation, while also giving the player a mechanic to get used to.
 ### Execution
-Movement is very simple. At first I made the movement happen exactly on the beat with very high speed, basically enemies just snapped to the next position, but something was off. How can the player hit the enemies on beat if they move on the beat? They cannot. So I added a slight delay of 0.2 seconds to their movement, so technically they do not move on beat, but the user feels like they do. This has solved this problem amazingly.
+Movement is very simple. At first I made the movement happen exactly on the beat in a coroutine with very high speed, basically enemies just snapped to the next position, but something was off. How can the player hit the enemies on beat if they move on the beat? They cannot. So I added a slight delay of 0.2 seconds to their movement, so technically they do not move on beat, but the user feels like they do. This has solved this problem amazingly.
+![EnemyMove](./Blog%20Post%20Images/Milestone%201/EnemyMove.png)
 
 
 
