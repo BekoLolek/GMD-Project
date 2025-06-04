@@ -22,7 +22,7 @@ The process started by creating a rectangle 6 units wide and 16 units long. Then
 ### Idea
 At first I wrote beat detection logic for every single component that needed it, but realizing that violates the DRY principle, I decided to move all that logic into one single class called BeatManager and handle beats as events of type System.Action<int>, called OnBeat.
 ### Execution
-First, I determine the beat interval by dividing 60 (seconds in a minute) by the BPM of the song. This value is then used to divide the current time in the song, giving me the number of the beat that the song is at currently. After some error and exception handling, the event is triggered.
+First, I determine the beat interval by dividing 60 (seconds in a minute) by the BPM of the song. This value is then used to divide the current time in the song, giving me the number of the beat that the song is at currently. After some error and exception handling, the event is triggered. 
 ![BeatManager](./Blog%20Post%20Images/Milestone%201/BeatManager.png)
 
 ## Enemy Spawning
